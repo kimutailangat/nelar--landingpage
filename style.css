@@ -147,6 +147,74 @@ footer p {
   margin: 5px 0;
 }
 
+/* ===== RESPONSIVENESS ===== */
+
+/* Phones (max 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .menu {
+    grid-template-columns: 1fr; /* single column */
+    gap: 1rem;
+  }
+
+  .menu-item img {
+    height: 180px; /* smaller images */
+  }
+
+  footer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+}
+
+/* Tablets (601px - 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 15px;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .menu {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 1.5rem;
+  }
+
+  .menu-item img {
+    height: 200px;
+  }
+}
+
+/* Desktops (above 900px) */
+@media (min-width: 901px) {
+  body {
+    font-size: 16px;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 2rem;
+  }
+
+  .menu-item img {
+    height: 220px;
+  }
+}
+
+
 footer a {
   color: #ffcc00;
   text-decoration: none;
