@@ -11,70 +11,6 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
-header {
-  background: #a83232;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.logo-icon {
-  font-size: 2rem;
-}
-.logo-type {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-nav a {
-  color: white;
-  margin-left: 1.5rem;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* HERO */
-.hero {
-  background: url("https://images.unsplash.com/photo-1589307004394-31a59d9c97b6?auto=format&fit=crop&w=1500&q=80") no-repeat center/cover;
-  color: white;
-  text-align: center;
-  padding: 6rem 2rem;
-}
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-.btn {
-  background: #f6c90e;
-  color: #333;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.btn:hover {
-  background: #ffd84d;
-}
-
-/* ABOUT */
-.about {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
 /* MENU */
 .menu {
   padding: 3rem 2rem;
@@ -84,6 +20,7 @@ nav a:hover {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
+  color: #a83232;
 }
 .menu-grid {
   display: grid;
@@ -116,20 +53,11 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
-/* CONTACT */
-.contact {
-  padding: 3rem 2rem;
-  text-align: center;
-}
-.contact i {
-  color: #a83232;
-  margin-right: 0.5rem;
-}
-
 /* FOOTER */
 footer {
   background: #a83232;
   color: white;
   text-align: center;
   padding: 1rem;
+  margin-top: 2rem;
 }
