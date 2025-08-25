@@ -3,94 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nelar Restaurant</title>
+  <title>Nelar Street Foods</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
-    <nav class="nav container">
-      <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M12 2l2.5 7h7l-5.5 4 2.5 7-6.5-4-6.5 4 2.5-7L2.5 9h7z"/>
-        </svg>
-        <span class="logo-type">Nelar</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <div class="logo">
+      <i class="fa-solid fa-utensils logo-icon"></i>
+      <span class="logo-type">Nelar</span>
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-text container">
-      <h1>Welcome to Nelar</h1>
-      <p>Taste Kenya’s best meals, made fresh for you.</p>
-      <a href="#menu" class="btn">See Our Menu</a>
-    </div>
+    <h1>Welcome to Nelar Street Foods</h1>
+    <p>Authentic Kenyan street flavors served fresh every day.</p>
+    <a href="#menu" class="btn">View Our Menu</a>
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="about container">
     <h2>About Us</h2>
-    <p>
-      At Nelar, we bring you the true taste of Kenya. From crunchy samosas to sizzling nyama choma, 
-      we prepare each dish with passion and pride. Whether you’re looking for a quick snack or 
-      a family dinner, Nelar is your go-to spot.
-    </p>
+    <p>At Nelar, we bring the taste of Kenyan streets to your table — from spicy mutura, crispy bhajia, to juicy nyama choma. Affordable, authentic, unforgettable.</p>
   </section>
 
   <!-- MENU -->
   <section id="menu" class="menu container">
-    <h2>Our Menu</h2>
+    <h2><i class="fa-solid fa-bowl-food"></i> Our Menu</h2>
     <div class="menu-grid">
       <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1625940278108-7762dd44f4a5?auto=format&fit=crop&w=600&q=80" alt="Samosa">
+        <img src="https://images.unsplash.com/photo-1617196037304-5c16a491061b?auto=format&fit=crop&w=600&q=80" alt="Samosa">
         <h3>Samosa</h3>
+        <p>KSH 100</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=600&q=80" alt="Bhajia">
+        <h3>Bhajia</h3>
         <p>KSH 150</p>
       </div>
       <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1617196037304-5c16a491061b?auto=format&fit=crop&w=600&q=80" alt="Bhajia">
-        <h3>Bhajia</h3>
+        <img src="https://images.unsplash.com/photo-1606788075761-11b27eb98bb0?auto=format&fit=crop&w=600&q=80" alt="Nyama Choma">
+        <h3>Nyama Choma</h3>
+        <p>KSH 500</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://images.unsplash.com/photo-1625941654171-4b6fdadd587a?auto=format&fit=crop&w=600&q=80" alt="Mutura">
+        <h3>Mutura</h3>
         <p>KSH 200</p>
       </div>
       <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1604908177700-51f1efb75f98?auto=format&fit=crop&w=600&q=80" alt="Nyama Choma">
-        <h3>Nyama Choma</h3>
-        <p>KSH 800</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457e05?auto=format&fit=crop&w=600&q=80" alt="Ugali & Sukuma">
-        <h3>Ugali & Sukuma</h3>
+        <img src="https://images.unsplash.com/photo-1608032079181-761c54c20c9a?auto=format&fit=crop&w=600&q=80" alt="Chips Masala">
+        <h3>Chips Masala</h3>
         <p>KSH 250</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4a3?auto=format&fit=crop&w=600&q=80" alt="Grilled Fish">
-        <h3>Grilled Fish</h3>
-        <p>KSH 700</p>
-      </div>
-      <div class="menu-item">
-        <img src="https://images.unsplash.com/photo-1625940278108-7762dd44f4a5?auto=format&fit=crop&w=600&q=80" alt="Chapati">
-        <h3>Chapati</h3>
-        <p>KSH 100</p>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact" class="contact container">
-    <h2>Contact Us</h2>
-    <p> Nairobi, Kenya</p>
-    <p> +254 712 345 678</p>
-    <p>✉ hello@nelar.co.ke</p>
+    <h2><i class="fa-solid fa-phone"></i> Contact Us</h2>
+    <p><i class="fa-solid fa-map-marker-alt"></i> Nairobi, Kenya</p>
+    <p><i class="fa-solid fa-phone"></i> +254 700 123456</p>
+    <p><i class="fa-solid fa-envelope"></i> info@nelarfoods.com</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Nelar. All rights reserved.</p>
+    <p>&copy; 2025 Nelar Street Foods. All rights reserved.</p>
   </footer>
 </body>
 </html>
