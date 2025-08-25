@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nelar — Street Bites Kenya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!--
+    Images in this demo are hotlinked from Unsplash Source (royalty-free). 
+    Replace with your own assets later if you want fixed, non-random images.
+  -->
+</head>
+<body>
+  <!-- Top/Nav -->
+  <nav class="nav">
+    <div class="brand">
+      <!-- Simple inline SVG logo -->
+      <svg class="logo-icon" viewBox="0 0 64 64" aria-label="Nelar logo" role="img">
+        <circle cx="32" cy="32" r="30" fill="#f4b400"></circle>
+        <path d="M20 44 V20 L44 44 V20" stroke="#143e34" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <span class="logo-type">Nelar</span>
+    </div>
+    <div class="contact-mini">
+      <a href="tel:+254700000000">Order: +254 700 000 000</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Real Kenyan Street Flavor</h1>
+      <p>Fresh • Fast • Affordable</p>
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/254700000000" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <a class="btn btn-outline" href="#menu">See Menu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About strip -->
+  <section class="about">
+    <h2>Welcome to Nelar</h2>
+    <p>From mutura to bhajia and chipo mwitu, we serve beloved Kenyan street classics with care, speed, and bold flavor.</p>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="grid">
+      <!-- Each image uses Unsplash Source with keywords; swap with your own files later -->
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?sausage,grill" alt="Mutura">
+        <div class="info"><h3>Mutura</h3><span class="price">KSh 20</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?egg,salad" alt="Mayai Pasua">
+        <div class="info"><h3>Mayai Pasua</h3><span class="price">KSh 25</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?corn,grilled" alt="Mahindi Choma">
+        <div class="info"><h3>Mahindi Choma</h3><span class="price">KSh 30</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?samosa" alt="Samosa">
+        <div class="info"><h3>Samosa</h3><span class="price">KSh 35</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?skewers,grill" alt="Mshikaki">
+        <div class="info"><h3>Mshikaki</h3><span class="price">KSh 50</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?bhaji,fries" alt="Bhajia">
+        <div class="info"><h3>Bhajia</h3><span class="price">KSh 50</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?potato,fried" alt="Viazi Karai">
+        <div class="info"><h3>Viazi Karai</h3><span class="price">KSh 30</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?doughnut" alt="Mandazi">
+        <div class="info"><h3>Mandazi</h3><span class="price">KSh 10</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?fries" alt="Chipo Mwitu">
+        <div class="info"><h3>Chipo Mwitu</h3><span class="price">KSh 70</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?bbq,meat" alt="Nyama Choma (¼ kg)">
+        <div class="info"><h3>Nyama Choma (¼ kg)</h3><span class="price">KSh 350</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?pilau,rice" alt="Pilau Plate">
+        <div class="info"><h3>Pilau Plate</h3><span class="price">KSh 250</span></div>
+      </article>
+      <article class="card">
+        <img src="https://source.unsplash.com/600x400/?salad,tomato,onion" alt="Kachumbari (Side)">
+        <div class="info"><h3>Kachumbari (Side)</h3><span class="price">KSh 40</span></div>
+      </article>
+    </div>
+
+    <div class="menu-cta">
+      <a class="btn" href="https://wa.me/254700000000" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <p class="notice">Prices inclusive of VAT • Photos via Unsplash</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact & Hours</h2>
+    <p><strong>Call:</strong> <a href="tel:+254700000000">+254 700 000 000</a> &nbsp;•&nbsp; <strong>Email:</strong> <a href="mailto:orders@nelar.co.ke">orders@nelar.co.ke</a></p>
+    <p><strong>Hours:</strong> Mon–Sun, 10:00–22:00</p>
+    <p><strong>Location:</strong> Nairobi, Kenya</p>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Nelar • Made with ❤️ in Kenya • Image credits: Unsplash</p>
+  </footer>
+
+  <script>
+    // current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
