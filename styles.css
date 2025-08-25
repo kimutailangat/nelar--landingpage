@@ -1,130 +1,147 @@
-:root{
-  --bg:#f7f5f0;
-  --text:#1a1a1a;
-  --brand:#143e34;     /* deep green */
-  --accent:#f4b400;    /* warm gold */
-  --muted:#8e8e8e;
-  --card:#ffffff;
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-*{box-sizing:border-box}
-html,body{margin:0;padding:0}
-body{
-  font-family: 'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-  color:var(--text);
-  background:var(--bg);
-  line-height:1.6;
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
-/* NAV */
-.nav{
-  position:sticky; top:0; z-index:10;
-  display:flex; align-items:center; justify-content:space-between;
-  padding:12px 6vw; background:rgba(255,255,255,0.9);
-  backdrop-filter: blur(8px);
-  border-bottom:1px solid #e8e6df;
+/* HEADER */
+header {
+  background: #2c5f2d;
+  padding: 1rem 0;
 }
-.brand{display:flex; align-items:center; gap:10px}
-.logo-icon{width:36px; height:36px}
-.logo-type{
-  font-family:'Playfair Display', serif;
-  font-weight:600; font-size:1.25rem; color:var(--brand);
-  letter-spacing:0.5px;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.contact-mini a{color:var(--brand); font-weight:600; text-decoration:none}
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+.logo-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 1.5rem;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+}
 
 /* HERO */
-.hero{
-  min-height:60vh;
-  background:url('https://source.unsplash.com/1600x900/?kenya,street,food,market') center/cover no-repeat;
-  display:grid; place-items:center; position:relative;
+.hero {
+  background: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem;
 }
-.hero::after{ /* gradient overlay for readability */
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(0,0,0,0.5), rgba(0,0,0,0.35));
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
-.hero-overlay{
-  position:relative; color:#fff; text-align:center; padding:3rem 1rem; max-width:900px;
+.hero p {
+  margin-bottom: 2rem;
 }
-.hero h1{
-  font-family:'Playfair Display', serif;
-  font-size:min(10vw,54px); margin:0 0 10px 0;
+.btn {
+  background: #f4a261;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
 }
-.hero p{margin:0 0 20px 0; font-size:1.15rem}
-.cta-row{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
-.btn{
-  background:var(--accent); color:#1b1b1b; padding:12px 18px; border-radius:8px;
-  text-decoration:none; font-weight:700; border:2px solid var(--accent);
-  transition:transform .15s ease, box-shadow .15s ease;
+.btn:hover {
+  background: #e76f51;
 }
-.btn:hover{transform:translateY(-2px); box-shadow:0 8px 16px rgba(0,0,0,.15)}
-.btn-outline{
-  background:transparent; color:#fff; border-color:#fff;
-}
-
-/* Logo */
-.logo img {
-  height: 60px;    /* Adjust size */
-  width: auto;     /* Keep proportions */
-}
-
 
 /* ABOUT */
-.about{
-  padding:40px 6vw; text-align:center;
+.about {
+  padding: 3rem 0;
+  text-align: center;
 }
-.about h2{
-  font-family:'Playfair Display', serif; color:var(--brand); margin:0 0 8px 0;
+.about h2 {
+  margin-bottom: 1rem;
 }
-.about p{margin:0 auto; max-width:800px; color:#333}
 
 /* MENU */
-.menu{padding:30px 6vw 50px}
-.menu h2{
-  text-align:center; margin:0 0 20px 0;
-  font-family:'Playfair Display', serif; color:var(--brand);
+.menu {
+  padding: 3rem 0;
 }
-.grid{
-  display:grid; gap:18px;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.menu h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.card{
-  background:var(--card); border-radius:14px; overflow:hidden;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
-  transition:transform .15s ease, box-shadow .15s ease;
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
-.card:hover{transform:translateY(-4px); box-shadow:0 10px 24px rgba(0,0,0,0.12)}
-.card img{width:100%; height:160px; object-fit:cover; display:block}
-.info{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:12px 14px;
+.menu-item {
+  background: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-.info h3{margin:0; font-size:1.05rem}
-.price{font-weight:800; color:var(--brand)}
-
-.menu-cta{
-  margin-top:24px; text-align:center;
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-.notice{color:var(--muted); font-size:0.9rem; margin-top:8px}
+.menu-item h3 {
+  margin: 0.5rem 0;
+}
+.menu-item p {
+  margin-bottom: 1rem;
+  color: #2c5f2d;
+  font-weight: bold;
+}
 
 /* CONTACT */
-.contact{
-  padding:40px 6vw 60px; text-align:center; background:#fff;
-  border-top:1px solid #eee;
+.contact {
+  padding: 3rem 0;
+  text-align: center;
 }
-.contact h2{
-  font-family:'Playfair Display', serif; color:var(--brand); margin-top:0;
+.contact h2 {
+  margin-bottom: 1rem;
 }
-.contact a{color:var(--brand); text-decoration:none; font-weight:600}
+.contact p {
+  margin: 0.5rem 0;
+}
 
 /* FOOTER */
-.footer{
-  padding:18px 6vw; text-align:center; color:#4b4b4b;
-  border-top:1px solid #e8e6df; background:#faf9f6;
-}
-
-/* RESPONSIVE TWEAKS */
-@media (min-width:1000px){
-  .hero{min-height:68vh}
-  .card img{height:180px}
+footer {
+  background: #2c5f2d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
