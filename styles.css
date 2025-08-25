@@ -62,6 +62,13 @@ body{
   background:transparent; color:#fff; border-color:#fff;
 }
 
+/* Logo */
+.logo img {
+  height: 60px;    /* Adjust size */
+  width: auto;     /* Keep proportions */
+}
+
+
 /* ABOUT */
 .about{
   padding:40px 6vw; text-align:center;
